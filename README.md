@@ -61,6 +61,7 @@ For model definitions:
  * @property {integer} x.required
  * @property {integer} y.required
  * @property {string} color
+ * @property {string} role @enum['GIVE',"ME","THE","ENUMS"]
  */
 
  // Now I can use it as below:
