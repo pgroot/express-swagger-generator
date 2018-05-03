@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-underscore-dangle": 0,
+    "camelcase": 0,
+    "no-use-before-define": 0
+  },
+  "globals": {
+    "__root": false
+  }
+}

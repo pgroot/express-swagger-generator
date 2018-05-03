@@ -4,7 +4,8 @@
   "description": "Generates swagger doc & ui based on express existing routes.",
   "main": "index.js",
   "scripts": {
-
+    "test": "node tests/index.js",
+    "format": "prettier-eslint \"src/**/*.js\" \"tests/**/*.js\" \"*.js\"  --write --single-quote"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,13 @@
   "homepage": "https://github.com/pgroot/express-swagger-generator",
   "dependencies": {
     "doctrine": "^2.0.0",
+    "doctrine-file": "^1.0.2",
     "glob": "^7.0.3",
+    "prettier-eslint": "^8.8.1",
+    "prettier-eslint-cli": "^4.7.1",
     "recursive-iterator": "^2.0.3",
     "swagger-parser": "^3.4.0",
-    "doctrine-file": "^1.0.2",
-    "express-swaggerize-ui": "^1.0.0"
+    "swagger-ui-express": "^3.0.8"
   },
   "devDependencies": {
     "body-parser": "^1.15.0",
