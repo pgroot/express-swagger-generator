@@ -1,9 +1,11 @@
 ### Express Swagger Generator
 
+This is a fork of https://github.com/pgroot/express-swagger-generator with some added features.
+
 #### Installation
 
 ```
-npm i express-swagger-generator --save-dev
+yarn add express-comments-swagger
 ```
 
 #### Usage

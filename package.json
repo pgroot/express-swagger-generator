@@ -1,29 +1,25 @@
 {
-  "name": "express-swagger-generator",
+  "name": "express-comments-swagger",
   "version": "1.1.0",
-  "description": "Generates swagger doc & ui based on express existing routes.",
+  "description": "Generates swagger doc & ui based on express route comments.",
   "main": "index.js",
   "scripts": {
     "test": "node tests/index.js",
-    "format": "prettier-eslint \"src/**/*.js\" \"tests/**/*.js\" \"*.js\"  --write --single-quote"
+    "format":
+      "prettier-eslint \"src/**/*.js\" \"tests/**/*.js\" \"*.js\"  --write --single-quote"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pgroot/express-swagger-generator.git"
+    "url": "https://github.com/adamgiacomelli/express-comments-swagger"
   },
-  "keywords": [
-    "express",
-    "swagger",
-    "api",
-    "swagger-ui",
-    "restful"
-  ],
-  "author": "https://github.com/pgroot/express-swagger-generator/graphs/contributors",
+  "keywords": ["express", "swagger", "api", "swagger-ui", "restful"],
+  "author":
+    "https://github.com/adamgiacomelli/express-comments-swagger/graphs/contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgroot/express-swagger-generator/issues"
+    "url": "https://github.com/adamgiacomelli/express-comments-swagger/issues"
   },
-  "homepage": "https://github.com/pgroot/express-swagger-generator",
+  "homepage": "https://github.com/adamgiacomelli/express-comments-swagger",
   "dependencies": {
     "doctrine": "^2.0.0",
     "doctrine-file": "^1.0.2",
