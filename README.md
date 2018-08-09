@@ -1,9 +1,11 @@
 ### Express Swagger Generator
 
+This is a fork of https://github.com/pgroot/express-swagger-generator with some added features.
+
 #### Installation
 
 ```
-npm i express-swagger-generator --save-dev
+yarn add express-comments-swagger
 ```
 
 #### Usage
@@ -36,6 +38,7 @@ let options = {
             }
         }
     },
+    docUrl: '/my-docs' //optional, default is 'api-docs'
     basedir: __dirname, //app absolute path
     files: ['./routes/**/*.js'] //Path to the API handle folder
 };
@@ -75,6 +78,7 @@ For model definitions:
  * @property {integer} x.required
  * @property {integer} y.required - Some description for point
  * @property {string} color
+ * @property {string} role @enum['GIVE',"ME","THE","ENUMS"]
  */
 
 /**
@@ -109,4 +113,4 @@ For model definitions:
 
 #### More
 
-This module is based on [express-swaggerize-ui](https://github.com/pgroot/express-swaggerize-ui) and [Doctrine-File](https://github.com/researchgate/doctrine-file)
+This module is based on [Doctrine-File](https://github.com/researchgate/doctrine-file)
