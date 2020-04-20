@@ -37,7 +37,13 @@ let options = {
         }
     },
     basedir: __dirname, //app absolute path
-    files: ['./routes/**/*.js'] //Path to the API handle folder
+    files: ['./routes/**/*.js'], //Path to the API handle folder
+    basicAuth: {
+        challenging: true,
+        authorizer: (username, password) => {
+            return true
+        }
+    }
 };
 expressSwagger(options)
 app.listen(3000);
@@ -109,6 +115,10 @@ For model definitions:
  * @security JWT
  */
 ```
+
+#### Basic Authentication
+
+This module uses [express-basic-auth](https://www.npmjs.com/package/express-basic-auth) to implement basic authentication. The object received in `options.basicAuth` is directly passed to the `basicAuth` function (more information [here](https://www.npmjs.com/package/express-basic-auth#how-to-use)). Authentication is only used if `basicAuth` is passed as an option.
 
 #### More
 

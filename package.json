@@ -23,11 +23,12 @@
   "homepage": "https://github.com/pgroot/express-swagger-generator",
   "dependencies": {
     "doctrine": "^2.0.0",
+    "doctrine-file": "^1.0.2",
+    "express-basic-auth": "^1.2.0",
+    "express-swaggerize-ui": "^1.0.3",
     "glob": "^7.0.3",
     "recursive-iterator": "^2.0.3",
-    "swagger-parser": "^5.0.5",
-    "doctrine-file": "^1.0.2",
-    "express-swaggerize-ui": "^1.0.3"
+    "swagger-parser": "^5.0.5"
   },
   "devDependencies": {
     "body-parser": "^1.15.0",
