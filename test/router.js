@@ -14,6 +14,7 @@ router.get('/', function(req, res, next) {
  */
 /**
  * This route will respond greetings to name in json request body.
+ * @summary greetings to name
  * @route POST /hello/
  * @group hello - Test Demo
  * @param {ReqNameJSON.model} name.body.required - username or email
